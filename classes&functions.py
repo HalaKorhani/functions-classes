@@ -34,3 +34,5 @@ days = int(input("Enter the number of days for rental: "))
 print("Available vehicles:")
 for index, vehicle in enumerate(vehicles):
     print(f"{index + 1}. {vehicle.display_info()}")
+choice = int(input("Select a vehicle by number: ")) - 1
+selected_vehicle = vehicles[choice]
