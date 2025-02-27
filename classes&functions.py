@@ -37,3 +37,4 @@ for index, vehicle in enumerate(vehicles):
 choice = int(input("Select a vehicle by number: ")) - 1
 selected_vehicle = vehicles[choice]
 show_vehicle_info(selected_vehicle)
+print(f"Rental cost for {selected_vehicle.brand} {selected_vehicle.model} for {days} days: ${selected_vehicle.calculate_rental_cost(days)}")
