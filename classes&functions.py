@@ -22,3 +22,11 @@ class Bike(Vehicle):
 
     def display_info(self):
         return f"Bike: {self.brand} {self.model}, Year: {self.year}, Engine: {self.engine_capacity}cc, Rental Price: ${self._rental_price_per_day}/day"
+def show_vehicle_info(vehicle):
+    print(f"{vehicle.display_info()}")
+vehicles = [
+    Car("Toyota", "Corolla", 2020, 50, 5),
+    Bike("Yamaha", "R1", 2019, 30, 998),
+    Car("Honda", "Civic", 2021, 55, 5),
+    Bike("Kawasaki", "Ninja", 2020, 40, 649),
+]
