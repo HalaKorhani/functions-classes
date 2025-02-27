@@ -30,3 +30,5 @@ vehicles = [
     Car("Honda", "Civic", 2021, 55, 5),
     Bike("Kawasaki", "Ninja", 2020, 40, 649),
 ]
+days = int(input("Enter the number of days for rental: "))
+print("Available vehicles:")
