@@ -20,3 +20,5 @@ class Bike(Vehicle):
         super().__init__(brand, model, year, _rental_price_per_day)
         self.engine_capacity = engine_capacity
 
+    def display_info(self):
+        return f"Bike: {self.brand} {self.model}, Year: {self.year}, Engine: {self.engine_capacity}cc, Rental Price: ${self._rental_price_per_day}/day"
