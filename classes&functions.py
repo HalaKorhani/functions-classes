@@ -36,3 +36,4 @@ for index, vehicle in enumerate(vehicles):
     print(f"{index + 1}. {vehicle.display_info()}")
 choice = int(input("Select a vehicle by number: ")) - 1
 selected_vehicle = vehicles[choice]
+show_vehicle_info(selected_vehicle)
