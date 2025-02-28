@@ -8,8 +8,9 @@ class Vehicle:
         return f"Vehicle: {self.brand} {self.model}, Year: {self.year}, Rental Price: ${self._rental_price_per_day}/day"
     def get_rental_price_per_day(self):
         return self.__rental_price_per_day
-    def set_rental_price_per_day(self, price):
-        self.__rental_price_per_day = price
+    def calculate_rental_cost(self, days):    
+        return self._rental_price_per_day * days
+
 class Car(Vehicle):
     def __init__(self, brand, model, year, _rental_price_per_day, seating_capacity):
         super().__init__(brand, model, year, _rental_price_per_day)
